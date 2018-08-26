@@ -47,7 +47,6 @@ export class EditServerComponent implements OnInit, CanComponentDeactivate {
   if ((this.serverName !== this.server.name || this.serverStatus !== this.server.status) && !this.changesSaved) {
   return confirm('Do you want to discard changes?');
   } else {
-    debugger;
     return true;
   }
  }
